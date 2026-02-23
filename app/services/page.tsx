@@ -218,49 +218,68 @@ export default function ServicesPage() {
             </h2>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-            {ongoingServices.map((service, i) => (
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
+            {ongoingServices.map((service) => (
               <div key={service.id} style={{
-                display: 'grid',
-                gridTemplateColumns: i % 2 === 0 ? '1fr 360px' : '360px 1fr',
                 background: '#fff',
-                overflow: 'hidden',
-                minHeight: 280,
+                padding: '36px 40px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 20,
               }}>
-                <div style={{
-                  padding: '44px 48px',
-                  display: 'flex', flexDirection: 'column', justifyContent: 'center',
-                  order: i % 2 === 0 ? 1 : 2,
-                }}>
-                  <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginBottom: 16 }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, color: '#1e3d20', letterSpacing: '0.1em', opacity: 0.5 }}>
+                {/* Thumbnail + title row */}
+                <div style={{ display: 'flex', gap: 20, alignItems: 'flex-start' }}>
+                  {/* Small thumbnail */}
+                  <div style={{
+                    width: 80, height: 80, flexShrink: 0,
+                    overflow: 'hidden', borderRadius: 2,
+                  }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={service.image}
+                      alt={service.imageAlt}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                    />
+                  </div>
+                  <div>
+                    <div style={{
+                      fontSize: 10, fontWeight: 700, color: '#1e3d20',
+                      letterSpacing: '0.12em', opacity: 0.6, marginBottom: 6,
+                    }}>
                       {service.number}
-                    </span>
-                    <h3 style={{ fontSize: 22, fontWeight: 700, color: '#1a1a1a', letterSpacing: '-0.01em' }}>
+                    </div>
+                    <h3 style={{
+                      fontSize: 19, fontWeight: 700, color: '#1a1a1a',
+                      letterSpacing: '-0.01em', lineHeight: 1.2,
+                    }}>
                       {service.title}
                     </h3>
                   </div>
-                  <p style={{
-                    fontSize: 14, lineHeight: 1.8, color: '#5a5e52', marginBottom: 24, maxWidth: 560,
-                  }}>
-                    {service.body}
-                  </p>
-                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-                    {service.bullets.map(b => (
-                      <span key={b} style={{
-                        fontSize: 11, fontWeight: 500, color: '#4a5242',
-                        background: '#e8e4dc', padding: '4px 10px', borderRadius: 2,
-                      }}>
-                        {b}
-                      </span>
-                    ))}
-                  </div>
                 </div>
-                <div style={{ order: i % 2 === 0 ? 2 : 1, position: 'relative', overflow: 'hidden', minHeight: 240 }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={service.image} alt={service.imageAlt}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                </div>
+
+                {/* Divider */}
+                <div style={{ height: 1, background: '#e8e4dc' }} />
+
+                {/* Description */}
+                <p style={{ fontSize: 14, lineHeight: 1.8, color: '#5a5e52', flex: 1 }}>
+                  {service.body}
+                </p>
+
+                {/* Bullets as a clean list rather than chips */}
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 6 }}>
+                  {service.bullets.map(b => (
+                    <li key={b} style={{
+                      fontSize: 13, fontWeight: 500, color: '#3a3e32',
+                      display: 'flex', alignItems: 'center', gap: 10,
+                    }}>
+                      <span style={{
+                        width: 5, height: 5, borderRadius: '50%',
+                        background: '#1e3d20', flexShrink: 0,
+                      }} />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
