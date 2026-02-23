@@ -1,5 +1,11 @@
 import Navigation from '@/components/Navigation'
 import SocialProofBar from '@/components/SocialProofBar'
+import WhoWeWorkWith from '@/components/WhoWeWorkWith'
+import ServicesSection from '@/components/ServicesSection'
+import WhyUs from '@/components/WhyUs'
+import Testimonials from '@/components/Testimonials'
+import FAQ from '@/components/FAQ'
+import ContactCTA from '@/components/ContactCTA'
 import Link from 'next/link'
 
 export default function Home() {
@@ -175,13 +181,12 @@ export default function Home() {
       </section>
 
       <SocialProofBar />
-
-      {/* PLACEHOLDER — more sections coming */}
-      <section style={{ padding: '120px 52px', background: '#f5f4f0', textAlign: 'center' }}>
-        <p style={{ fontSize: 14, color: '#9a9e92', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-          More sections coming soon
-        </p>
-      </section>
+      <WhoWeWorkWith />
+      <ServicesSection />
+      <WhyUs />
+      <Testimonials />
+      <FAQ />
+      <ContactCTA />
     </>
   )
 }

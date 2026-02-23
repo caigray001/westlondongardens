@@ -16,6 +16,43 @@ export const metadata: Metadata = {
   },
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Do you work with property management companies and managing agents?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes — the majority of our clients are property management companies, managing agents, and RMCs overseeing residential leasehold developments across London. We are experienced in working within the requirements of block management, including reporting, scheduled visits, and communication with both agents and residents.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are you SafeContractor accredited?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. West London Gardens is SafeContractor accredited and fully insured. SafeContractor accreditation demonstrates compliance with health and safety legislation, which is an important consideration for managing agents appointing contractors to work on leasehold developments.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What areas of London do you cover?',
+      acceptedAnswer: { '@type': 'Answer', text: 'We are based in Ealing, West London and serve properties across London including Ealing, Kensington, Richmond, Hammersmith, Chelsea, Fulham, Westminster, Chiswick, Acton, and surrounding areas.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you offer scheduled maintenance contracts?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. All of our work is available on scheduled maintenance contracts. We visit your site, assess the grounds, and agree a tailored maintenance programme with set visit frequencies and a clear scope of work. Contracts can be reviewed annually.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long have you been operating?',
+      acceptedAnswer: { '@type': 'Answer', text: 'West London Gardens was founded in 1994 by Antony Kitcher and is now run by his son Luke. We have been providing grounds maintenance services across London for over 30 years. Many of our clients have been with us for more than 25 years.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you maintain multiple sites under one contract?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. We regularly work with managing agents and property management companies who have multiple sites across London. We can provide a single contract covering several properties, with consistent standards across all sites and consolidated reporting.' },
+    },
+  ],
+}
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
@@ -62,6 +99,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </head>
       <body>{children}</body>
