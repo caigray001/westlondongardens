@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import SocialProofBar from '@/components/SocialProofBar'
 import Link from 'next/link'
 
 export default function Home() {
@@ -72,8 +73,8 @@ export default function Home() {
               maxWidth: 480,
               marginBottom: 40,
             }}>
-              We keep the grounds of London&apos;s residential estates, commercial sites,
-              and block management portfolios in immaculate condition — year round,
+              We keep the grounds of London&apos;s residential estates, commercial
+              developments, and managed blocks in immaculate condition — year round,
               without the hassle.
             </p>
 
@@ -173,8 +174,10 @@ export default function Home() {
         </div>
       </section>
 
+      <SocialProofBar />
+
       {/* PLACEHOLDER — more sections coming */}
-      <section style={{ padding: '120px 52px', background: '#fff', textAlign: 'center' }}>
+      <section style={{ padding: '120px 52px', background: '#f5f4f0', textAlign: 'center' }}>
         <p style={{ fontSize: 14, color: '#9a9e92', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
           More sections coming soon
         </p>
