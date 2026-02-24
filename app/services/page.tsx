@@ -252,20 +252,17 @@ export default function ServicesPage() {
             {
               src: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
               alt: 'Lawn maintenance London estate',
-              label: 'Ground & Lawn Maintenance',
             },
             {
               src: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80',
               alt: 'Hedge trimming West London',
-              label: 'Hedge Trimming & Pruning',
             },
             {
               src: 'https://images.unsplash.com/photo-1558618047-3c9f0b9a8b32?w=800&q=80',
               alt: 'Pressure washing communal areas',
-              label: 'Pressure Washing',
             },
           ].map((img) => (
-            <div key={img.label} style={{ position: 'relative', overflow: 'hidden' }}>
+            <div key={img.alt} style={{ position: 'relative', overflow: 'hidden' }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={img.src}
@@ -275,20 +272,6 @@ export default function ServicesPage() {
                   objectFit: 'cover', display: 'block',
                 }}
               />
-              {/* Gradient overlay */}
-              <div style={{
-                position: 'absolute', inset: 0,
-                background: 'linear-gradient(to right, rgba(0,0,0,0.45) 0%, transparent 60%)',
-              }} />
-              {/* Service label */}
-              <div style={{
-                position: 'absolute', bottom: 14, left: 18,
-                fontSize: 12, fontWeight: 600,
-                color: 'rgba(255,255,255,0.9)',
-                letterSpacing: '0.02em',
-              }}>
-                {img.label}
-              </div>
             </div>
           ))}
         </div>
@@ -444,6 +427,74 @@ export default function ServicesPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ADDITIONAL SERVICES */}
+      <section style={{ background: '#f5f4f0', padding: '80px 52px' }}>
+        <div style={{ maxWidth: 1360, margin: '0 auto' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: 80,
+            alignItems: 'start',
+          }}>
+            <div>
+              <div style={{
+                fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
+                textTransform: 'uppercase', color: '#1e3d20', marginBottom: 16,
+              }}>
+                Also Available
+              </div>
+              <h2 style={{
+                fontSize: 'clamp(24px, 2.4vw, 36px)',
+                fontWeight: 800, letterSpacing: '-0.02em',
+                lineHeight: 1.15, color: '#1a1a1a', marginBottom: 16,
+              }}>
+                Not all sites are the same.
+              </h2>
+              <p style={{ fontSize: 15, lineHeight: 1.75, color: '#5a5e52' }}>
+                The services listed above cover the majority of what we do,
+                but our work varies considerably from site to site. If you have
+                a specific requirement not listed here, call us — we&apos;ve
+                likely done it before.
+              </p>
+            </div>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: '8px 40px',
+            }}>
+              {[
+                'Turfing & lawn renovation',
+                'Tree stump removal',
+                'Raised bed installation',
+                'Irrigation system maintenance',
+                'Artificial grass maintenance',
+                'Gravel path maintenance',
+                'Pond & water feature care',
+                'Post-construction clearance',
+                'Planting scheme design',
+                'Wildflower meadow management',
+                'Sports pitch maintenance',
+                'Fencing & gate maintenance',
+              ].map((item) => (
+                <div key={item} style={{
+                  display: 'flex', alignItems: 'center', gap: 10,
+                  padding: '10px 0',
+                  borderBottom: '1px solid #e8e4dc',
+                  fontSize: 13, fontWeight: 500, color: '#3a3e32',
+                }}>
+                  <span style={{
+                    width: 5, height: 5, borderRadius: '50%',
+                    background: '#1e3d20', flexShrink: 0,
+                  }} />
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
