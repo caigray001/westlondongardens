@@ -155,46 +155,142 @@ export default function ServicesPage() {
 
       {/* HERO */}
       <section style={{
-        background: '#1e3d20',
-        padding: '160px 52px 100px',
-        position: 'relative',
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        minHeight: '75vh',
+        paddingTop: 80,
         overflow: 'hidden',
       }}>
-        {/* Subtle grid */}
+        {/* LEFT — dark green, headline */}
         <div style={{
-          position: 'absolute', inset: 0,
-          backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
-          pointerEvents: 'none',
-        }} />
-
-        <div style={{ maxWidth: 1360, margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          background: '#1e3d20',
+          padding: '80px 60px 80px 52px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          position: 'relative',
+          overflow: 'hidden',
+        }}>
+          {/* Grid texture */}
           <div style={{
-            fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
-            textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', marginBottom: 20,
-          }}>
-            West London Gardens
+            position: 'absolute', inset: 0,
+            backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
+            backgroundSize: '60px 60px',
+            pointerEvents: 'none',
+          }} />
+
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <div style={{
+              fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
+              textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)',
+              marginBottom: 24,
+            }}>
+              Our Services
+            </div>
+
+            <h1 style={{
+              fontSize: 'clamp(34px, 3.8vw, 58px)',
+              fontWeight: 800,
+              letterSpacing: '-0.025em',
+              lineHeight: 1.08,
+              color: '#fff',
+              marginBottom: 28,
+            }}>
+              Everything your site<br />needs to stay<br />
+              <span style={{ color: 'rgba(255,255,255,0.38)', fontWeight: 300 }}>
+                in good order.
+              </span>
+            </h1>
+
+            <p style={{
+              fontSize: 16, fontWeight: 400, lineHeight: 1.75,
+              color: 'rgba(255,255,255,0.58)', maxWidth: 440, marginBottom: 44,
+            }}>
+              All services are available on scheduled maintenance contracts
+              for residential estates, managed blocks, and commercial
+              developments across London.
+            </p>
+
+            {/* Quick service links */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              {[
+                'Ground & Lawn Maintenance',
+                'Hedge Trimming & Pruning',
+                'Weeding & Planting',
+                'Pressure Washing',
+                'Seasonal Programmes',
+              ].map((s, i) => (
+                <div key={s} style={{
+                  display: 'flex', alignItems: 'center', gap: 12,
+                }}>
+                  <span style={{
+                    fontSize: 10, fontWeight: 700, color: 'rgba(255,255,255,0.3)',
+                    letterSpacing: '0.1em', width: 20, flexShrink: 0,
+                  }}>
+                    0{i + 1}
+                  </span>
+                  <span style={{
+                    fontSize: 13, fontWeight: 500,
+                    color: 'rgba(255,255,255,0.65)',
+                  }}>
+                    {s}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-          <h1 style={{
-            fontSize: 'clamp(40px, 5vw, 72px)',
-            fontWeight: 800,
-            letterSpacing: '-0.025em',
-            lineHeight: 1.05,
-            color: '#fff',
-            maxWidth: 700,
-            marginBottom: 28,
-          }}>
-            Grounds maintenance.<br />
-            <span style={{ color: 'rgba(255,255,255,0.45)', fontWeight: 300 }}>Done properly.</span>
-          </h1>
-          <p style={{
-            fontSize: 18, fontWeight: 400, lineHeight: 1.7,
-            color: 'rgba(255,255,255,0.6)', maxWidth: 560,
-          }}>
-            All of our services are available on scheduled maintenance contracts
-            for residential estates, managed blocks, and commercial developments
-            across London.
-          </p>
+        </div>
+
+        {/* RIGHT — 3 stacked image panels */}
+        <div style={{
+          display: 'grid',
+          gridTemplateRows: '1.2fr 1fr 0.8fr',
+          gap: 2,
+          background: '#f5f4f0',
+        }}>
+          {[
+            {
+              src: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+              alt: 'Lawn maintenance London estate',
+              label: 'Ground & Lawn Maintenance',
+            },
+            {
+              src: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80',
+              alt: 'Hedge trimming West London',
+              label: 'Hedge Trimming & Pruning',
+            },
+            {
+              src: 'https://images.unsplash.com/photo-1558618047-3c9f0b9a8b32?w=800&q=80',
+              alt: 'Pressure washing communal areas',
+              label: 'Pressure Washing',
+            },
+          ].map((img) => (
+            <div key={img.label} style={{ position: 'relative', overflow: 'hidden' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={img.src}
+                alt={img.alt}
+                style={{
+                  width: '100%', height: '100%',
+                  objectFit: 'cover', display: 'block',
+                }}
+              />
+              {/* Gradient overlay */}
+              <div style={{
+                position: 'absolute', inset: 0,
+                background: 'linear-gradient(to right, rgba(0,0,0,0.45) 0%, transparent 60%)',
+              }} />
+              {/* Service label */}
+              <div style={{
+                position: 'absolute', bottom: 14, left: 18,
+                fontSize: 12, fontWeight: 600,
+                color: 'rgba(255,255,255,0.9)',
+                letterSpacing: '0.02em',
+              }}>
+                {img.label}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
