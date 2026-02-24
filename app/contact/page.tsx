@@ -59,8 +59,7 @@ export default function ContactPage() {
               color: '#1a1a1a',
               marginBottom: 20,
             }}>
-              Let&apos;s talk about<br />
-              <span style={{ color: '#1e3d20' }}>your site.</span>
+              Get in touch.
             </h1>
             <p style={{ fontSize: 15, lineHeight: 1.75, color: '#5a5e52', maxWidth: 420 }}>
               Whether you manage one property or a portfolio across London,
