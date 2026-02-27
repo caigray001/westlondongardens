@@ -81,7 +81,7 @@ export default function WhyUs() {
               color: '#fff',
               maxWidth: 480,
             }}>
-              What property managers<br />actually care about.
+              Built on reputation.<br />Proven by retention.
             </h2>
           </div>
           <p style={{
