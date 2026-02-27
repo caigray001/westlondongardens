@@ -142,38 +142,18 @@ export default function Home() {
               borderRadius: 2,
             }} />
 
-            {/* Borough card */}
+            {/* Borough strip */}
             <div style={{
               position: 'absolute',
               background: '#1e3d20',
               color: '#fff',
-              padding: '18px 22px',
-              bottom: 32,
-              left: -28,
-              minWidth: 200,
+              padding: '18px 24px',
+              bottom: 0,
+              left: 0,
+              right: 0,
             }}>
-              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', opacity: 0.7, marginBottom: 6 }}>Currently Serving</div>
-              <div style={{ fontSize: 15, fontWeight: 700, lineHeight: 1.4 }}>Ealing · Kensington · Richmond<br />Hammersmith · Chelsea & Beyond</div>
-            </div>
-
-            {/* Compliance badge */}
-            <div style={{
-              position: 'absolute', top: 24, right: 24,
-              background: 'rgba(245,244,240,0.95)',
-              padding: '12px 16px',
-              borderRadius: 2,
-              backdropFilter: 'blur(8px)',
-              display: 'flex', alignItems: 'center', gap: 10,
-            }}>
-              <div style={{ width: 36, height: 36, background: '#e8f0e8', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="#1e3d20" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <div style={{ fontSize: 12, fontWeight: 700, color: '#1a1a1a' }}>SafeContractor Accredited</div>
-                <div style={{ fontSize: 11, color: '#6b7561' }}>Fully Insured · Est. 1994</div>
-              </div>
+              <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.6, marginBottom: 5 }}>Currently Serving</div>
+              <div style={{ fontSize: 13, fontWeight: 700, lineHeight: 1.5 }}>Ealing · Kensington · Richmond · Hammersmith · Chelsea & Beyond</div>
             </div>
           </div>
 
