@@ -124,7 +124,7 @@ export default function Home() {
             {/* Main image */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85"
+              src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=85"
               alt="Professional grounds maintenance London"
               style={{
                 width: '100%',
@@ -171,8 +171,8 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <div style={{ fontSize: 12, fontWeight: 700, color: '#1a1a1a' }}>Fully Compliant</div>
-                <div style={{ fontSize: 11, color: '#6b7561' }}>Health & Safety Certified</div>
+                <div style={{ fontSize: 12, fontWeight: 700, color: '#1a1a1a' }}>SafeContractor Accredited</div>
+                <div style={{ fontSize: 11, color: '#6b7561' }}>Fully Insured · Est. 1994</div>
               </div>
             </div>
           </div>
