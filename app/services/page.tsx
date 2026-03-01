@@ -157,14 +157,14 @@ export default function ServicesPage() {
       <section style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        minHeight: '40vh',
+        maxHeight: 420,
         paddingTop: 80,
         overflow: 'hidden',
       }}>
         {/* LEFT — dark green, headline */}
         <div style={{
           background: '#1e3d20',
-          padding: '80px 60px 80px 52px',
+          padding: '48px 60px 48px 52px',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -247,7 +247,6 @@ export default function ServicesPage() {
           gridTemplateRows: '1.2fr 1fr 0.8fr',
           gap: 2,
           background: '#f5f4f0',
-          maxHeight: '50vh',
         }}>
           {[
             {
