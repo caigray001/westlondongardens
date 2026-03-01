@@ -155,95 +155,59 @@ export default function ServicesPage() {
 
       {/* HERO */}
       <section style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
         paddingTop: 80,
+        position: 'relative',
+        height: 340,
+        overflow: 'hidden',
+        background: '#1e3d20',
       }}>
-        {/* LEFT — dark green, headline */}
-        <div style={{
-          background: '#1e3d20',
-          padding: '48px 60px 48px 52px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          position: 'relative',
-          overflow: 'hidden',
-        }}>
-          {/* Grid texture */}
-          <div style={{
+        {/* Background image */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://images.unsplash.com/photo-1642541744624-7a2a89545a32?w=1400&q=80"
+          alt="Maintained grounds"
+          style={{
             position: 'absolute', inset: 0,
-            backgroundImage: 'linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
-            pointerEvents: 'none',
-          }} />
-
-          <div style={{ position: 'relative', zIndex: 1 }}>
-            <div style={{
-              fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
-              textTransform: 'uppercase', color: 'rgba(255,255,255,0.35)',
-              marginBottom: 24,
-            }}>
-              Our Services
-            </div>
-
-            <h1 style={{
-              fontSize: 'clamp(34px, 3.8vw, 58px)',
-              fontWeight: 800,
-              letterSpacing: '-0.025em',
-              lineHeight: 1.08,
-              color: '#fff',
-              marginBottom: 28,
-            }}>
-              Everything your site<br />needs to stay<br />
-              <span style={{ color: 'rgba(255,255,255,0.38)', fontWeight: 300 }}>
-                in good order.
-              </span>
-            </h1>
-
-            <p style={{
-              fontSize: 16, fontWeight: 400, lineHeight: 1.75,
-              color: 'rgba(255,255,255,0.58)', maxWidth: 440,
-            }}>
-              All services are available on scheduled maintenance contracts
-              for residential estates, managed blocks, and commercial
-              developments across London.
-            </p>
-          </div>
-        </div>
-
-        {/* RIGHT — 3 stacked image panels */}
+            width: '100%', height: '100%',
+            objectFit: 'cover', display: 'block',
+            opacity: 0.25,
+          }}
+        />
+        {/* Content */}
         <div style={{
-          display: 'grid',
-          gridTemplateRows: '1.2fr 1fr 0.8fr',
-          gap: 2,
-          background: '#f5f4f0',
+          position: 'relative', zIndex: 1,
+          maxWidth: 1360, margin: '0 auto',
+          padding: '60px 52px',
+          display: 'flex', flexDirection: 'column',
+          justifyContent: 'center', height: '100%',
         }}>
-          {[
-            {
-              src: 'https://images.unsplash.com/photo-1642541744624-7a2a89545a32?w=800&q=80',
-              alt: 'Lawn maintenance London estate',
-            },
-            {
-              src: 'https://images.unsplash.com/photo-1761024300173-91f065d30a9a?w=800&q=80',
-              alt: 'Hedge trimming West London',
-            },
-            {
-              src: 'https://images.unsplash.com/photo-1640653488366-f7771cd7292d?w=800&q=80',
-              alt: 'Pressure washing communal areas',
-            },
-          ].map((img) => (
-            <div key={img.alt} style={{ position: 'relative', overflow: 'hidden' }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={img.src}
-                alt={img.alt}
-                style={{
-                  width: '100%', height: '100%',
-                  objectFit: 'cover', display: 'block',
-                }}
-              />
-            </div>
-          ))}
+          <div style={{
+            fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
+            textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)',
+            marginBottom: 20,
+          }}>
+            Our Services
+          </div>
+          <h1 style={{
+            fontSize: 'clamp(30px, 3.2vw, 48px)',
+            fontWeight: 800,
+            letterSpacing: '-0.025em',
+            lineHeight: 1.1,
+            color: '#fff',
+            marginBottom: 16,
+          }}>
+            Everything your site needs to stay{' '}
+            <span style={{ color: 'rgba(255,255,255,0.4)', fontWeight: 300 }}>
+              in good order.
+            </span>
+          </h1>
+          <p style={{
+            fontSize: 15, fontWeight: 400, lineHeight: 1.7,
+            color: 'rgba(255,255,255,0.55)', maxWidth: 520,
+          }}>
+            Scheduled maintenance contracts for residential estates, managed blocks,
+            and commercial developments across London.
+          </p>
         </div>
       </section>
 
