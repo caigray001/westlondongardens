@@ -202,40 +202,12 @@ export default function ServicesPage() {
 
             <p style={{
               fontSize: 16, fontWeight: 400, lineHeight: 1.75,
-              color: 'rgba(255,255,255,0.58)', maxWidth: 440, marginBottom: 44,
+              color: 'rgba(255,255,255,0.58)', maxWidth: 440,
             }}>
               All services are available on scheduled maintenance contracts
               for residential estates, managed blocks, and commercial
               developments across London.
             </p>
-
-            {/* Quick service links */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-              {[
-                'Ground & Lawn Maintenance',
-                'Hedge Trimming & Pruning',
-                'Weeding & Planting',
-                'Pressure Washing',
-                'Seasonal Programmes',
-              ].map((s, i) => (
-                <div key={s} style={{
-                  display: 'flex', alignItems: 'center', gap: 12,
-                }}>
-                  <span style={{
-                    fontSize: 10, fontWeight: 700, color: 'rgba(255,255,255,0.3)',
-                    letterSpacing: '0.1em', width: 20, flexShrink: 0,
-                  }}>
-                    0{i + 1}
-                  </span>
-                  <span style={{
-                    fontSize: 13, fontWeight: 500,
-                    color: 'rgba(255,255,255,0.65)',
-                  }}>
-                    {s}
-                  </span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 
