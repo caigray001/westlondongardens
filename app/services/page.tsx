@@ -157,7 +157,7 @@ export default function ServicesPage() {
       <section style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        minHeight: '75vh',
+        minHeight: '40vh',
         paddingTop: 80,
         overflow: 'hidden',
       }}>
@@ -247,6 +247,7 @@ export default function ServicesPage() {
           gridTemplateRows: '1.2fr 1fr 0.8fr',
           gap: 2,
           background: '#f5f4f0',
+          maxHeight: '50vh',
         }}>
           {[
             {
@@ -388,7 +389,7 @@ export default function ServicesPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 2 }}>
             {seasonalServices.map((service) => (
               <div key={service.id} style={{ background: '#f5f4f0', overflow: 'hidden' }}>
-                <div style={{ height: 200, overflow: 'hidden', position: 'relative' }}>
+                <div style={{ height: 120, overflow: 'hidden', position: 'relative' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={service.image} alt={service.imageAlt}
                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
