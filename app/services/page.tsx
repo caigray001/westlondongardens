@@ -157,9 +157,7 @@ export default function ServicesPage() {
       <section style={{
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        maxHeight: 420,
         paddingTop: 80,
-        overflow: 'hidden',
       }}>
         {/* LEFT — dark green, headline */}
         <div style={{
