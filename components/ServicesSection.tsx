@@ -13,7 +13,7 @@ const services = [
     title: 'Ground & Lawn Maintenance',
     description: 'Our core service — regular scheduled visits to keep grass cut, borders tidy, leaves cleared, and communal outdoor areas in consistently good condition throughout the year. Tailored maintenance plans are drawn up for each site based on size, usage, and seasonal requirements.',
     details: ['Lawn mowing & edging', 'Leaf clearance', 'Seasonal plant care', 'Border maintenance', 'Litter & debris removal'],
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=80',
+    image: 'https://images.unsplash.com/photo-1642541744624-7a2a89545a32?w=700&q=80',
     imageAlt: 'Ground and lawn maintenance London residential estate',
   },
   {
@@ -21,7 +21,7 @@ const services = [
     title: 'Hedge Trimming & Pruning',
     description: 'Precisely cut hedges and well-shaped shrubs make a significant difference to the appearance of any managed property. We trim and prune to maintain structure, encourage healthy growth, and keep communal boundaries looking sharp — not just once, but consistently across the year.',
     details: ['Hedge shaping & cutting', 'Shrub pruning', 'Tree maintenance', 'Overgrowth clearance', 'Crown lifting'],
-    image: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=700&q=80',
+    image: 'https://images.unsplash.com/photo-1761024300173-91f065d30a9a?w=700&q=80',
     imageAlt: 'Professional hedge trimming pruning West London',
   },
   {
@@ -29,7 +29,7 @@ const services = [
     title: 'Weeding & Planting',
     description: 'Persistent weeds in hard surfaces, beds, and borders are one of the most common complaints from residents on managed developments. We remove weeds thoroughly from all areas and ensure planted beds remain vibrant and well-maintained, with seasonal planting where required.',
     details: ['Bed & border weeding', 'Hard surface weed control', 'Seasonal planting', 'Mulching', 'Soil care'],
-    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=700&q=80',
+    image: 'https://images.unsplash.com/photo-1762286769757-4367cbd54eb7?w=700&q=80',
     imageAlt: 'Weeding planting communal gardens London',
   },
   {
@@ -37,7 +37,7 @@ const services = [
     title: 'Pressure Washing',
     description: 'Patios, pathways, car parks, and communal hard surfaces accumulate dirt, moss, and grime over time. Our pressure washing service restores them to a clean, safe condition — particularly important for managed blocks where slip hazards on communal paths are a compliance concern.',
     details: ['Pathway & patio cleaning', 'Car park surfaces', 'Communal entrances', 'Moss & algae removal', 'Drainage clearance'],
-    image: 'https://images.unsplash.com/photo-1558618047-3c9f0b9a8b32?w=700&q=80',
+    image: 'https://images.unsplash.com/photo-1640653488366-f7771cd7292d?w=700&q=80',
     imageAlt: 'Pressure washing communal areas residential block London',
   },
   {
@@ -45,7 +45,7 @@ const services = [
     title: 'Seasonal Programmes',
     description: 'Grounds maintenance requirements change significantly across the year. We operate year-round with seasonal programmes that cover spring planting, summer growth management, autumn leaf clearance, and winter pathway safety — so your sites are always prepared for the current season.',
     details: ['Spring bulb planting', 'Summer maintenance schedules', 'Autumn leaf clearance', 'Winter pathway gritting', 'Seasonal reporting'],
-    image: 'https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=700&q=80',
+    image: 'https://images.unsplash.com/photo-1733286125300-b4c5563295ad?w=700&q=80',
     imageAlt: 'Seasonal grounds maintenance programme London estates',
   },
 ]

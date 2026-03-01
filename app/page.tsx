@@ -124,7 +124,7 @@ export default function Home() {
             {/* Main image */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=85"
+              src="https://images.unsplash.com/photo-1642541744624-7a2a89545a32?w=900&q=85"
               alt="Professional grounds maintenance London"
               style={{
                 width: '100%',

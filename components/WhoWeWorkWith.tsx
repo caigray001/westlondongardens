@@ -33,7 +33,7 @@ const clients = [
     headline: 'Office parks, business centres & retail sites',
     body: 'First impressions matter for commercial tenants and their clients. We maintain the exterior grounds of office parks, business centres, and retail developments to a consistently high standard — keeping external spaces presentable year round.',
     tags: ['Office Park Grounds', 'Entrance Maintenance', 'Year-Round Contracts'],
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1743178207584-4a0c1109975e?w=600&q=80',
     imageAlt: 'Commercial office park grounds maintenance London',
   },
   {
@@ -46,7 +46,7 @@ const clients = [
     headline: 'Large residential estates & private grounds',
     body: 'For estate managers and private landlords overseeing significant land, we provide a dedicated, discreet service built on long-term relationships. Many of our private estate clients have been with us for over two decades.',
     tags: ['Private Estate Grounds', 'Long-Term Contracts', 'Dedicated Team'],
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1683849086278-acaa9c0d8eb6?w=600&q=80',
     imageAlt: 'Private estate grounds maintenance West London',
   },
 ]

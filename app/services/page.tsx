@@ -16,7 +16,7 @@ const coreServices = [
     title: 'Ground & Lawn Maintenance',
     body: 'The foundation of any grounds maintenance contract. We carry out regular scheduled visits to mow grass, edge borders, clear debris, and keep communal outdoor areas in consistently good condition throughout the year. Maintenance plans are drawn up per site based on size, usage, and seasonal requirements — so every visit has a clear scope and nothing gets overlooked.',
     bullets: ['Lawn mowing & edging', 'Leaf & debris clearance', 'Border maintenance', 'Communal path sweeping', 'Litter removal'],
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1642541744624-7a2a89545a32?w=800&q=80',
     imageAlt: 'Ground and lawn maintenance London residential estate',
   },
   {
@@ -26,7 +26,7 @@ const coreServices = [
     title: 'Hedge Trimming & Pruning',
     body: 'Well-maintained hedges and shrubs significantly affect the appearance of any managed property. We cut and shape to maintain structure, encourage healthy growth, and keep communal boundaries looking sharp year round. Overgrown hedges encroaching on pathways or entrances are also dealt with promptly — a common issue on older residential estates.',
     bullets: ['Hedge shaping & cutting', 'Shrub pruning', 'Boundary maintenance', 'Overgrowth clearance', 'Crown lifting'],
-    image: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1761024300173-91f065d30a9a?w=800&q=80',
     imageAlt: 'Professional hedge trimming pruning West London',
   },
   {
@@ -36,7 +36,7 @@ const coreServices = [
     title: 'Weeding & Planting',
     body: 'Persistent weeds in hard surfaces, beds, and borders are one of the most common resident complaints on managed developments. We remove weeds thoroughly across all areas — not just beds but driveways, pathways, and communal paving — and keep planted areas vibrant and well-presented. Seasonal planting is available where required to keep grounds looking their best throughout the year.',
     bullets: ['Bed & border weeding', 'Hard surface weed control', 'Seasonal planting', 'Mulching', 'Soil care'],
-    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1762286769757-4367cbd54eb7?w=800&q=80',
     imageAlt: 'Weeding planting communal gardens London',
   },
   {
@@ -46,7 +46,7 @@ const coreServices = [
     title: 'Pressure Washing',
     body: 'Patios, pathways, car parks, and communal hard surfaces accumulate dirt, moss, and algae over time. Beyond appearance, this creates genuine slip hazards — a compliance concern for managing agents responsible for communal areas on leasehold developments. Our pressure washing service restores surfaces to a clean, safe condition and is available as part of a scheduled contract or as a standalone visit.',
     bullets: ['Pathway & patio cleaning', 'Car park surfaces', 'Communal entrances', 'Moss & algae removal', 'Drainage clearance'],
-    image: 'https://images.unsplash.com/photo-1558618047-3c9f0b9a8b32?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1640653488366-f7771cd7292d?w=800&q=80',
     imageAlt: 'Pressure washing communal areas residential block London',
   },
   {
@@ -56,7 +56,7 @@ const coreServices = [
     title: 'Seasonal Programmes',
     body: 'Grounds maintenance requirements change significantly across the year. Our seasonal programmes ensure your site is always prepared for the current season — spring bulb planting and fresh growth management, summer cutting and watering, autumn leaf clearance before it becomes a hazard, and winter pathway maintenance to keep communal areas safe. All included as part of an annual maintenance contract.',
     bullets: ['Spring bulb planting', 'Summer growth management', 'Autumn leaf clearance', 'Winter gritting & pathway safety', 'Seasonal reporting'],
-    image: 'https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1733286125300-b4c5563295ad?w=800&q=80',
     imageAlt: 'Seasonal grounds maintenance programme London estates',
   },
   {
@@ -66,7 +66,7 @@ const coreServices = [
     title: 'Grounds Inspection',
     body: 'For managing agents who need documented evidence of site condition, we carry out formal grounds inspections and provide written records of findings and work completed. This is particularly useful for RMCs and freeholders who need to demonstrate due diligence to leaseholders, or for properties changing management company and requiring a baseline assessment.',
     bullets: ['Condition assessments', 'Written inspection records', 'Photographic documentation', 'Maintenance recommendations', 'Handover inspections'],
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1770822662831-c361f15790ea?w=800&q=80',
     imageAlt: 'Grounds inspection residential estate London',
   },
   {
@@ -76,7 +76,7 @@ const coreServices = [
     title: 'One-Off Clearance',
     body: 'Storm damage, neglected sites, or end-of-tenancy clearance requirements sometimes call for a one-off visit rather than a scheduled contract. We handle clearance work for existing clients and for new sites where grounds have been allowed to deteriorate. This is often the starting point for properties that then move onto a regular maintenance contract.',
     bullets: ['Storm damage clearance', 'Overgrowth removal', 'Site reinstatement', 'Waste disposal', 'Pre-contract preparation'],
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1719763462298-dfd3ae24febc?w=800&q=80',
     imageAlt: 'One-off garden clearance West London',
   },
 ]
@@ -250,15 +250,15 @@ export default function ServicesPage() {
         }}>
           {[
             {
-              src: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+              src: 'https://images.unsplash.com/photo-1642541744624-7a2a89545a32?w=800&q=80',
               alt: 'Lawn maintenance London estate',
             },
             {
-              src: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80',
+              src: 'https://images.unsplash.com/photo-1761024300173-91f065d30a9a?w=800&q=80',
               alt: 'Hedge trimming West London',
             },
             {
-              src: 'https://images.unsplash.com/photo-1558618047-3c9f0b9a8b32?w=800&q=80',
+              src: 'https://images.unsplash.com/photo-1640653488366-f7771cd7292d?w=800&q=80',
               alt: 'Pressure washing communal areas',
             },
           ].map((img) => (
