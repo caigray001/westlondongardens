@@ -2,16 +2,16 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'West London Gardens | Professional Grounds Maintenance',
-  description: 'West London Gardens provides professional grounds maintenance for residential estates, commercial developments and block management portfolios across London. Est. 1994. SafeContractor accredited.',
-  keywords: 'grounds maintenance London, commercial grounds maintenance, block management gardening, estate grounds maintenance, West London gardening, property management grounds maintenance',
-  alternates: { canonical: 'https://www.westlondongardens.co.uk' },
+  title: 'Green Crown Grounds | Professional Grounds Maintenance',
+  description: 'Green Crown Grounds provides professional grounds maintenance for residential estates, commercial developments and block management portfolios across London. Est. 1994. SafeContractor accredited.',
+  keywords: 'grounds maintenance London, commercial grounds maintenance, block management gardening, estate grounds maintenance, grounds maintenance London, property management grounds maintenance',
+  alternates: { canonical: 'https://www.greencrowngrounds.co.uk' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://www.westlondongardens.co.uk',
-    siteName: 'West London Gardens',
-    title: 'West London Gardens | Professional Grounds Maintenance',
+    url: 'https://www.greencrowngrounds.co.uk',
+    siteName: 'Green Crown Grounds',
+    title: 'Green Crown Grounds | Professional Grounds Maintenance',
     description: 'Trusted grounds maintenance for London residential estates, commercial sites and block management portfolios. 30+ years experience. SafeContractor accredited.',
   },
 }
@@ -28,7 +28,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: 'Are you SafeContractor accredited?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes. West London Gardens is SafeContractor accredited and fully insured. SafeContractor accreditation demonstrates compliance with health and safety legislation, which is an important consideration for managing agents appointing contractors to work on leasehold developments.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. Green Crown Grounds is SafeContractor accredited and fully insured. SafeContractor accreditation demonstrates compliance with health and safety legislation, which is an important consideration for managing agents appointing contractors to work on leasehold developments.' },
     },
     {
       '@type': 'Question',
@@ -43,7 +43,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: 'How long have you been operating?',
-      acceptedAnswer: { '@type': 'Answer', text: 'West London Gardens was founded in 1994 by Antony Kitcher and is now run by his son Luke. We have been providing grounds maintenance services across London for over 30 years. Many of our clients have been with us for more than 25 years.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Green Crown Grounds was founded in 1994 by James Fletcher and is now run by his son Tom. We have been providing grounds maintenance services across London for over 30 years. Many of our clients have been with us for more than 25 years.' },
     },
     {
       '@type': 'Question',
@@ -56,10 +56,10 @@ const faqJsonLd = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'West London Gardens',
-  url: 'https://www.westlondongardens.co.uk',
-  telephone: '02088408799',
-  email: 'admin@westlondongardens.co.uk',
+  name: 'Green Crown Grounds',
+  url: 'https://www.greencrowngrounds.co.uk',
+  telephone: '02030000000',
+  email: 'admin@greencrowngrounds.co.uk',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '45 St Marys Road',
@@ -81,13 +81,13 @@ const jsonLd = {
       closes: '18:00',
     }
   ],
-  description: 'West London Gardens provides professional grounds maintenance for residential estates, commercial developments and block management portfolios across London. Established 1994. SafeContractor accredited.',
+  description: 'Green Crown Grounds provides professional grounds maintenance for residential estates, commercial developments and block management portfolios across London. Established 1994. SafeContractor accredited.',
   foundingDate: '1994',
   areaServed: ['Ealing', 'Kensington', 'Richmond', 'Hammersmith', 'Chelsea', 'Fulham', 'Westminster', 'London'],
   hasCredential: 'SafeContractor Approved',
   sameAs: [
-    'https://www.instagram.com/westlondongardens',
-    'https://www.facebook.com/westlondongardens',
+    'https://www.instagram.com/greencrowngrounds',
+    'https://www.facebook.com/greencrowngrounds',
     'https://www.linkedin.com/company/west-london-gardens',
   ],
 }

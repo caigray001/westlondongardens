@@ -19,7 +19,7 @@ const testimonials = [
     initial: 'SB',
   },
   {
-    quote: "I have been working with West London Gardens for over 10 years. They are professional, communicative and reliable. The management team provide a personal service on every project — it's a genuine pleasure working with them and I wouldn't hesitate to recommend them.",
+    quote: "I have been working with Green Crown Grounds for over 10 years. They are professional, communicative and reliable. The management team provide a personal service on every project — it's a genuine pleasure working with them and I wouldn't hesitate to recommend them.",
     name: 'Siobhan Hurst BA (Hons) ATPI',
     title: 'Associate Director',
     company: 'Firstport',
@@ -28,7 +28,7 @@ const testimonials = [
     initial: 'SH',
   },
   {
-    quote: "West London Gardens have consistently provided reliable and responsive service to our residents. Their attention to communal spaces and willingness to go beyond the basics makes a real difference. Their service is a genuinely valuable asset to our community.",
+    quote: "Green Crown Grounds have consistently provided reliable and responsive service to our residents. Their attention to communal spaces and willingness to go beyond the basics makes a real difference. Their service is a genuinely valuable asset to our community.",
     name: 'Rita Da Silva',
     title: 'Property Manager',
     company: 'Firstport',

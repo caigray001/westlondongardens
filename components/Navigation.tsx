@@ -41,7 +41,7 @@ export default function Navigation() {
         </div>
         <div>
           <div style={{ fontSize: 15, fontWeight: 700, color: '#1a1a1a', lineHeight: 1.1, letterSpacing: '-0.01em' }}>
-            West London Gardens
+            Green Crown Grounds
           </div>
           <div style={{ fontSize: 11, fontWeight: 400, color: '#6b7561', marginTop: 1 }}>
             Professional Grounds Maintenance
@@ -55,10 +55,10 @@ export default function Navigation() {
           <Link key={l.label} href={l.href} className="nav-link">{l.label}</Link>
         ))}
         <a
-          href="tel:02088408799"
+          href="tel:02030000000"
           style={{ fontSize: 13, fontWeight: 600, color: '#1e3d20', textDecoration: 'none' }}
         >
-          020 8840 8799
+          020 3000 0000
         </a>
         <Link href="/contact" className="btn-primary" style={{ padding: '10px 20px' }}>
           Get a Quote

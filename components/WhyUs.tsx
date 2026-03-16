@@ -1,11 +1,11 @@
 'use client'
 
-// Section 5 — Why West London Gardens
+// Section 5 — Why Green Crown Grounds
 // Doesn't exist on the current site at all. Property managers choosing a grounds
 // maintenance contractor have very specific concerns — reliability, communication,
 // compliance, and consistency. This section addresses each one directly.
 // AEO: structured to answer "what should I look for in a grounds maintenance
-// contractor" and "why choose West London Gardens" style queries.
+// contractor" and "why choose Green Crown Grounds" style queries.
 
 const pillars = [
   {
@@ -91,8 +91,8 @@ export default function WhyUs() {
             color: 'rgba(255,255,255,0.6)',
             maxWidth: 380,
           }}>
-            Founded in 1994 by Antony Kitcher and now run by his son Luke,
-            West London Gardens has been built entirely on repeat business
+            Founded in 1994 by James Fletcher and now run by his son Tom,
+            Green Crown Grounds has been built entirely on repeat business
             and referrals. Here&apos;s why.
           </p>
         </div>

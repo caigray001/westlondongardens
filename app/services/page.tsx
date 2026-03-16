@@ -3,9 +3,9 @@ import Navigation from '@/components/Navigation'
 import ContactCTA from '@/components/ContactCTA'
 
 export const metadata: Metadata = {
-  title: 'Grounds Maintenance Services | West London Gardens',
+  title: 'Grounds Maintenance Services | Green Crown Grounds',
   description: 'Professional grounds maintenance services for residential estates, managed blocks, and commercial developments across London. Scheduled contracts, seasonal programmes, and block management services.',
-  alternates: { canonical: 'https://www.westlondongardens.co.uk/services' },
+  alternates: { canonical: 'https://www.greencrowngrounds.co.uk/services' },
 }
 
 const coreServices = [

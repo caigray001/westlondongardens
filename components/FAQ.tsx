@@ -19,11 +19,11 @@ const faqs = [
   },
   {
     q: 'Are you SafeContractor accredited?',
-    a: 'Yes. West London Gardens is SafeContractor accredited and fully insured. SafeContractor accreditation demonstrates compliance with health and safety legislation, which is an important consideration for managing agents appointing contractors to work on leasehold developments.',
+    a: 'Yes. Green Crown Grounds is SafeContractor accredited and fully insured. SafeContractor accreditation demonstrates compliance with health and safety legislation, which is an important consideration for managing agents appointing contractors to work on leasehold developments.',
   },
   {
     q: 'What areas of London do you cover?',
-    a: 'We are based in Ealing, West London and serve properties across London including Ealing, Kensington, Richmond, Hammersmith, Chelsea, Fulham, Westminster, Chiswick, Acton, and surrounding areas. If you are unsure whether we cover your site, call us on 020 8840 8799 and we will confirm straight away.',
+    a: 'We are based in Ealing, West London and serve properties across London including Ealing, Kensington, Richmond, Hammersmith, Chelsea, Fulham, Westminster, Chiswick, Acton, and surrounding areas. If you are unsure whether we cover your site, call us on 020 3000 0000 and we will confirm straight away.',
   },
   {
     q: 'Do you offer scheduled maintenance contracts?',
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: 'How long have you been operating?',
-    a: 'West London Gardens was founded in 1994 by Antony Kitcher and is now run by his son Luke. We have been providing grounds maintenance services to residential and commercial properties across London for over 30 years. Many of our clients have been with us for more than 25 years.',
+    a: 'Green Crown Grounds was founded in 1994 by James Fletcher and is now run by his son Tom. We have been providing grounds maintenance services to residential and commercial properties across London for over 30 years. Many of our clients have been with us for more than 25 years.',
   },
   {
     q: 'Can you maintain multiple sites under one contract?',
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: 'How quickly can you respond to one-off maintenance requests?',
-    a: 'For existing clients we aim to respond to urgent requests as quickly as possible, typically within the same week. We understand that unexpected issues — storm damage, overgrowth complaints from residents, post-event clearance — need to be dealt with promptly. Call us directly on 020 8840 8799 for urgent matters.',
+    a: 'For existing clients we aim to respond to urgent requests as quickly as possible, typically within the same week. We understand that unexpected issues — storm damage, overgrowth complaints from residents, post-event clearance — need to be dealt with promptly. Call us directly on 020 3000 0000 for urgent matters.',
   },
 ]
 
@@ -85,8 +85,8 @@ export default function FAQ() {
           }}>
             If you have a question that isn&apos;t covered here, the quickest way
             to get an answer is to call us directly on{' '}
-            <a href="tel:02088408799" style={{ color: '#1e3d20', fontWeight: 600, textDecoration: 'none' }}>
-              020 8840 8799
+            <a href="tel:02030000000" style={{ color: '#1e3d20', fontWeight: 600, textDecoration: 'none' }}>
+              020 3000 0000
             </a>
             . We don&apos;t use call centres — you&apos;ll speak to someone who knows the business.
           </p>
@@ -186,11 +186,11 @@ export default function FAQ() {
             </div>
           </div>
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <a href="tel:02088408799" className="btn-secondary">
+            <a href="tel:02030000000" className="btn-secondary">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              020 8840 8799
+              020 3000 0000
             </a>
             <a href="/contact" className="btn-primary">
               Send a Message

@@ -4,9 +4,9 @@ import ContactCTA from '@/components/ContactCTA'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'About Us | West London Gardens — 30+ Years of Grounds Maintenance',
-  description: 'West London Gardens was founded in 1994 by Antony Kitcher and is now run by his son Luke. Over 30 years of professional grounds maintenance for residential estates, managed blocks, and commercial developments across London. SafeContractor accredited.',
-  alternates: { canonical: 'https://www.westlondongardens.co.uk/about' },
+  title: 'About Us | Green Crown Grounds — 30+ Years of Grounds Maintenance',
+  description: 'Green Crown Grounds was founded in 1994 by James Fletcher and is now run by his son Tom. Over 30 years of professional grounds maintenance for residential estates, managed blocks, and commercial developments across London. SafeContractor accredited.',
+  alternates: { canonical: 'https://www.greencrowngrounds.co.uk/about' },
 }
 
 const values = [
@@ -54,10 +54,10 @@ const values = [
 ]
 
 const timeline = [
-  { year: '1994', text: 'Antony Kitcher founds West London Gardens, beginning with residential garden maintenance across Ealing and surrounding boroughs.' },
+  { year: '1994', text: 'James Fletcher founds Green Crown Grounds, beginning with residential garden maintenance across Ealing and surrounding boroughs.' },
   { year: '2000s', text: 'The business expands into grounds maintenance for managed residential blocks and commercial developments, building long-term relationships with property managers across London.' },
-  { year: '2010s', text: 'West London Gardens becomes SafeContractor accredited, formalising the health and safety standards the business had always operated to.' },
-  { year: 'Today', text: 'Luke Kitcher now runs the business, continuing the same standards his father established. Many clients have been with us for over 25 years — a retention rate built entirely on consistent, reliable service.' },
+  { year: '2010s', text: 'Green Crown Grounds becomes SafeContractor accredited, formalising the health and safety standards the business had always operated to.' },
+  { year: 'Today', text: 'Tom Fletcher now runs the business, continuing the same standards his father established. Many clients have been with us for over 25 years — a retention rate built entirely on consistent, reliable service.' },
 ]
 
 export default function AboutPage() {
@@ -141,7 +141,7 @@ export default function AboutPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
-                alt="West London Gardens team at work"
+                alt="Green Crown Grounds team at work"
                 style={{
                   width: '100%', height: '100%',
                   objectFit: 'cover', display: 'block',
@@ -192,7 +192,7 @@ export default function AboutPage() {
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                 <p style={{ fontSize: 15, lineHeight: 1.8, color: '#5a5e52' }}>
-                  West London Gardens was founded in 1994 by Antony Kitcher. Known
+                  Green Crown Grounds was founded in 1994 by James Fletcher. Known
                   for reliability and competence, the family-run business continues
                   to deliver exceptional garden care for both commercial and
                   residential developments across London.
@@ -200,7 +200,7 @@ export default function AboutPage() {
                 <p style={{ fontSize: 15, lineHeight: 1.8, color: '#5a5e52' }}>
                   We have established a loyal client base across London, with many
                   of our clients having been with us for over 25 years. Today,
-                  Antony&apos;s son Luke upholds the legacy, ensuring consistent,
+                  James&apos;s son Tom upholds the legacy, ensuring consistent,
                   high-quality service on every site we maintain.
                 </p>
               </div>
@@ -264,7 +264,7 @@ export default function AboutPage() {
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                 <p style={{ fontSize: 15, lineHeight: 1.8, color: '#5a5e52' }}>
-                  At West London Gardens, we believe that a well-maintained outdoor
+                  At Green Crown Grounds, we believe that a well-maintained outdoor
                   space starts with a dedicated and skilled team. Our experienced
                   gardeners take pride in delivering exceptional service, ensuring
                   every property we maintain is cared for with precision and
@@ -318,7 +318,7 @@ export default function AboutPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80"
-                alt="West London Gardens gardening team at work on residential estate"
+                alt="Green Crown Grounds gardening team at work on residential estate"
                 style={{
                   width: '100%', height: '100%',
                   objectFit: 'cover', display: 'block',
@@ -491,7 +491,7 @@ export default function AboutPage() {
                 SafeContractor accredited.<br />Fully insured. Fully compliant.
               </h2>
               <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.6)', maxWidth: 560 }}>
-                At West London Gardens, we uphold the highest standards of safety and
+                At Green Crown Grounds, we uphold the highest standards of safety and
                 professionalism. With over 30 years of experience, we have built a
                 reputation for reliability and expertise across London. As a fully
                 licensed and SafeContractor accredited company, our work meets all
