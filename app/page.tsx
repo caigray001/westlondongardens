@@ -66,9 +66,9 @@ export default function Home() {
               color: '#1a1a1a',
               marginBottom: 24,
             }}>
-              London&apos;s Trusted<br />
-              <span style={{ color: '#1e3d20' }}>Grounds Maintenance</span><br />
-              Partner.
+              Your Grounds.<br />
+              <span style={{ color: '#1e3d20' }}>Our Problem.</span><br />
+              Since 1994.
             </h1>
 
             <p className="fade-up-3" style={{

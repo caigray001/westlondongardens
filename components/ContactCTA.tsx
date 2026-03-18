@@ -48,8 +48,8 @@ export default function ContactCTA() {
             color: '#1a1a1a',
             marginBottom: 20,
           }}>
-            Fast response. Clear communication.<br />
-            <span style={{ color: '#1e3d20' }}>No chasing needed.</span>
+            One site visit. One clear proposal.<br />
+            <span style={{ color: '#1e3d20' }}>You decide from there.</span>
           </h2>
           <p style={{
             fontSize: 16, color: '#5a5e52', lineHeight: 1.7,
