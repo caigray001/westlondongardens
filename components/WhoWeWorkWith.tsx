@@ -1,11 +1,5 @@
 'use client'
 
-// Section 3 — Who We Work With
-// The existing site treats this as a generic list. We're making it a proper B2B
-// targeting section — each client type gets its own card with specific language
-// that mirrors how property managers actually describe their own work.
-// AEO: each card contains specific query-matching language that AI tools can surface.
-
 const clients = [
   {
     type: 'Residential Block Management',
@@ -53,42 +47,27 @@ const clients = [
 
 export default function WhoWeWorkWith() {
   return (
-    <section style={{
-      background: '#f5f4f0',
-      padding: '100px 52px',
-    }}>
-      <div style={{ maxWidth: 1360, margin: '0 auto' }}>
+    <section className="px-5 md:px-[52px] py-16 md:py-[100px]" style={{ background: '#f5f4f0' }}>
+      <div className="max-w-[1360px] mx-auto">
 
         {/* Header */}
-        <div style={{ marginBottom: 64 }}>
+        <div className="mb-10 md:mb-16">
           <div style={{
-            fontSize: 11,
-            fontWeight: 600,
-            letterSpacing: '0.14em',
-            textTransform: 'uppercase',
-            color: '#1e3d20',
-            marginBottom: 16,
+            fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
+            textTransform: 'uppercase', color: '#1e3d20', marginBottom: 16,
           }}>
             Who We Work With
           </div>
-          <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 40, flexWrap: 'wrap' }}>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-10">
             <h2 style={{
-              fontSize: 'clamp(30px, 3.2vw, 48px)',
-              fontWeight: 800,
-              letterSpacing: '-0.02em',
-              lineHeight: 1.1,
-              color: '#1a1a1a',
-              maxWidth: 520,
+              fontSize: 'clamp(26px, 3.2vw, 48px)',
+              fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, color: '#1a1a1a', maxWidth: 520,
             }}>
-              Built for the people who manage<br />
+              Built for the people who manage{' '}
               <span style={{ color: '#1e3d20' }}>London&apos;s properties.</span>
             </h2>
             <p style={{
-              fontSize: 16,
-              fontWeight: 400,
-              lineHeight: 1.7,
-              color: '#5a5e52',
-              maxWidth: 400,
+              fontSize: 16, fontWeight: 400, lineHeight: 1.7, color: '#5a5e52', maxWidth: 400,
             }}>
               We don&apos;t work with everyone. We specialise in grounds maintenance for
               property managers, managing agents, and estate directors who need a
@@ -98,100 +77,48 @@ export default function WhoWeWorkWith() {
         </div>
 
         {/* Cards */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: 2,
-        }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2px]">
           {clients.map((client) => (
-            <div key={client.type} style={{
-              background: '#fff',
-              display: 'flex',
-              flexDirection: 'column',
-              overflow: 'hidden',
-            }}>
-              {/* Image */}
+            <div key={client.type} style={{ background: '#fff', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
               <div style={{ position: 'relative', height: 200, overflow: 'hidden', flexShrink: 0 }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={client.image}
-                  alt={client.imageAlt}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    display: 'block',
-                    transition: 'transform 0.4s ease',
-                  }}
+                <img src={client.image} alt={client.imageAlt}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.4) 100%)' }} />
                 <div style={{
-                  position: 'absolute',
-                  inset: 0,
-                  background: 'linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.4) 100%)',
-                }} />
-                {/* Type label on image */}
-                <div style={{
-                  position: 'absolute',
-                  bottom: 16, left: 20,
-                  fontSize: 11,
-                  fontWeight: 700,
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
-                  color: 'rgba(255,255,255,0.9)',
+                  position: 'absolute', bottom: 16, left: 20,
+                  fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.9)',
                 }}>
                   {client.type}
                 </div>
               </div>
 
-              {/* Content */}
-              <div style={{ padding: '28px 28px 32px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                {/* Icon + headline */}
+              <div className="p-5 md:p-7 flex-1 flex flex-col">
                 <div style={{ display: 'flex', gap: 14, alignItems: 'flex-start', marginBottom: 16 }}>
                   <div style={{
-                    width: 48, height: 48,
-                    background: '#e8f0e8',
-                    borderRadius: 2,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    flexShrink: 0,
+                    width: 48, height: 48, background: '#e8f0e8', borderRadius: 2,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
                   }}>
                     {client.icon}
                   </div>
                   <h3 style={{
-                    fontSize: 16,
-                    fontWeight: 700,
-                    lineHeight: 1.3,
-                    color: '#1a1a1a',
-                    letterSpacing: '-0.01em',
-                    paddingTop: 4,
+                    fontSize: 16, fontWeight: 700, lineHeight: 1.3, color: '#1a1a1a',
+                    letterSpacing: '-0.01em', paddingTop: 4,
                   }}>
                     {client.headline}
                   </h3>
                 </div>
 
-                <p style={{
-                  fontSize: 14,
-                  fontWeight: 400,
-                  lineHeight: 1.75,
-                  color: '#5a5e52',
-                  marginBottom: 24,
-                  flex: 1,
-                }}>
+                <p style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.75, color: '#5a5e52', marginBottom: 24, flex: 1 }}>
                   {client.body}
                 </p>
 
-                {/* Tags — AEO keyword signals */}
                 <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
                   {client.tags.map(tag => (
                     <span key={tag} style={{
-                      fontSize: 11,
-                      fontWeight: 500,
-                      color: '#1e3d20',
-                      background: '#e8f0e8',
-                      padding: '4px 10px',
-                      borderRadius: 2,
-                      letterSpacing: '0.02em',
+                      fontSize: 11, fontWeight: 500, color: '#1e3d20', background: '#e8f0e8',
+                      padding: '4px 10px', borderRadius: 2, letterSpacing: '0.02em',
                     }}>
                       {tag}
                     </span>
@@ -203,16 +130,7 @@ export default function WhoWeWorkWith() {
         </div>
 
         {/* Bottom CTA strip */}
-        <div style={{
-          marginTop: 2,
-          background: '#1e3d20',
-          padding: '28px 36px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: 24,
-          flexWrap: 'wrap',
-        }}>
+        <div className="mt-[2px] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-6 flex-wrap p-5 md:p-7 lg:px-9 lg:py-7" style={{ background: '#1e3d20' }}>
           <div>
             <div style={{ fontSize: 16, fontWeight: 700, color: '#fff', marginBottom: 4 }}>
               Not sure if we&apos;re the right fit?
@@ -221,10 +139,8 @@ export default function WhoWeWorkWith() {
               Call us and we&apos;ll tell you honestly within 5 minutes.
             </div>
           </div>
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <a href="tel:02030000000" className="btn-outline-light">
-              020 3000 0000
-            </a>
+          <div className="flex gap-3 flex-wrap">
+            <a href="tel:02030000000" className="btn-outline-light">020 3000 0000</a>
             <a href="/contact" className="btn-primary" style={{ background: '#fff', color: '#1e3d20' }}>
               Request a Site Visit
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none">

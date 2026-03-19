@@ -82,7 +82,7 @@ export default function ContactForm() {
       </div>
 
       {/* Name + Phone side by side */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
           <label style={labelStyle}>
             Your Name <span style={{ color: '#1e3d20' }}>*</span>

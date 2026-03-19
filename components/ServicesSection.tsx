@@ -1,12 +1,5 @@
 'use client'
 
-// Section 4 — Services
-// Existing site: 8 icon tiles, one-line descriptions. Feels like a brochure menu.
-// New approach: 5 core services, each with a proper description written to answer
-// specific questions a property manager would ask. AEO: content structured so AI
-// tools can match queries like "hedge trimming for residential estates London" or
-// "grounds maintenance pressure washing communal areas."
-
 const services = [
   {
     number: '01',
@@ -52,11 +45,11 @@ const services = [
 
 export default function Services() {
   return (
-    <section style={{ background: '#fff', padding: '100px 52px' }}>
-      <div style={{ maxWidth: 1360, margin: '0 auto' }}>
+    <section className="px-5 md:px-[52px] py-16 md:py-[100px]" style={{ background: '#fff' }}>
+      <div className="max-w-[1360px] mx-auto">
 
         {/* Header */}
-        <div style={{ marginBottom: 64, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 32 }}>
+        <div className="mb-10 md:mb-16 flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-8">
           <div>
             <div style={{
               fontSize: 11, fontWeight: 600, letterSpacing: '0.14em',
@@ -65,19 +58,16 @@ export default function Services() {
               Our Services
             </div>
             <h2 style={{
-              fontSize: 'clamp(30px, 3.2vw, 48px)',
-              fontWeight: 800,
-              letterSpacing: '-0.02em',
-              lineHeight: 1.1,
-              color: '#1a1a1a',
+              fontSize: 'clamp(26px, 3.2vw, 48px)',
+              fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.1, color: '#1a1a1a',
             }}>
               Everything your site needs,<br />
               <span style={{ color: '#1e3d20' }}>handled properly.</span>
             </h2>
           </div>
           <a href="/services" style={{
-            fontSize: 13, fontWeight: 600, color: '#1e3d20',
-            textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8,
+            fontSize: 13, fontWeight: 600, color: '#1e3d20', textDecoration: 'none',
+            display: 'flex', alignItems: 'center', gap: 8,
             borderBottom: '1.5px solid #1e3d20', paddingBottom: 2, flexShrink: 0,
           }}>
             View all services
@@ -87,49 +77,25 @@ export default function Services() {
           </a>
         </div>
 
-        {/* Service rows — alternating layout */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+        {/* Service rows */}
+        <div className="flex flex-col gap-[2px]">
           {services.map((service, i) => (
-            <div key={service.number} style={{
-              display: 'grid',
-              gridTemplateColumns: i % 2 === 0 ? '1fr 420px' : '420px 1fr',
-              background: '#f5f4f0',
-              overflow: 'hidden',
-              minHeight: 260,
-            }}>
+            <div key={service.number} className="grid grid-cols-1 md:grid-cols-[1fr_320px] lg:grid-cols-[1fr_420px]" style={{ background: '#f5f4f0', overflow: 'hidden', minHeight: 260 }}>
 
-              {/* Content — order flips for even rows */}
-              <div style={{
-                padding: '40px 44px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                order: i % 2 === 0 ? 1 : 2,
-              }}>
+              {/* Content */}
+              <div className={`p-5 md:p-8 lg:p-11 flex flex-col justify-center ${i % 2 !== 0 ? 'md:order-2' : 'md:order-1'}`}>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: 16, marginBottom: 16 }}>
-                  <span style={{
-                    fontSize: 12, fontWeight: 700, color: '#1e3d20',
-                    letterSpacing: '0.1em', opacity: 0.6,
-                  }}>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: '#1e3d20', letterSpacing: '0.1em', opacity: 0.6 }}>
                     {service.number}
                   </span>
-                  <h3 style={{
-                    fontSize: 22, fontWeight: 700,
-                    color: '#1a1a1a', letterSpacing: '-0.01em', lineHeight: 1.2,
-                  }}>
+                  <h3 style={{ fontSize: 22, fontWeight: 700, color: '#1a1a1a', letterSpacing: '-0.01em', lineHeight: 1.2 }}>
                     {service.title}
                   </h3>
                 </div>
-
-                <p style={{
-                  fontSize: 14, fontWeight: 400, lineHeight: 1.75,
-                  color: '#5a5e52', marginBottom: 24, maxWidth: 520,
-                }}>
+                <p style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.75, color: '#5a5e52', marginBottom: 24, maxWidth: 520 }}>
                   {service.description}
                 </p>
-
-                {/* Detail chips */}
-                <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+                <div className="flex gap-[6px] flex-wrap">
                   {service.details.map(d => (
                     <span key={d} style={{
                       fontSize: 11, fontWeight: 500, color: '#4a5242',
@@ -142,19 +108,10 @@ export default function Services() {
               </div>
 
               {/* Image */}
-              <div style={{
-                position: 'relative',
-                overflow: 'hidden',
-                order: i % 2 === 0 ? 2 : 1,
-              }}>
+              <div className={`relative overflow-hidden h-[200px] md:h-auto ${i % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={service.image}
-                  alt={service.imageAlt}
-                  style={{
-                    width: '100%', height: '100%',
-                    objectFit: 'cover', display: 'block',
-                  }}
+                <img src={service.image} alt={service.imageAlt}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
               </div>
 
@@ -163,17 +120,7 @@ export default function Services() {
         </div>
 
         {/* Bottom note */}
-        <div style={{
-          marginTop: 40,
-          padding: '24px 32px',
-          background: '#f5f4f0',
-          borderLeft: '3px solid #1e3d20',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: 24,
-          flexWrap: 'wrap',
-        }}>
+        <div className="mt-10 p-5 md:p-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-6 flex-wrap" style={{ background: '#f5f4f0', borderLeft: '3px solid #1e3d20' }}>
           <p style={{ fontSize: 14, color: '#5a5e52', lineHeight: 1.6, maxWidth: 620 }}>
             <strong style={{ color: '#1a1a1a' }}>All services are available on scheduled maintenance contracts.</strong>{' '}
             We&apos;ll visit your site, assess your requirements, and put together a tailored programme — with transparent pricing and no hidden costs.
