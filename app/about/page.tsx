@@ -25,7 +25,7 @@ const values = [
 ]
 
 const timeline = [
-  { year: '1994', text: 'James Fletcher founds Green Crown Grounds, beginning with residential garden maintenance across Ealing and surrounding boroughs.' },
+  { year: '1994', text: 'James Fletcher founds Green Crown Grounds, beginning with residential garden maintenance across London.' },
   { year: '2000s', text: 'The business expands into grounds maintenance for managed residential blocks and commercial developments, building long-term relationships with property managers across London.' },
   { year: '2010s', text: 'Green Crown Grounds becomes SafeContractor accredited, formalising the health and safety standards the business had always operated to.' },
   { year: 'Today', text: 'Tom Fletcher now runs the business, continuing the same standards his father established. Many clients have been with us for over 25 years — a retention rate built entirely on consistent, reliable service.' },

@@ -15,7 +15,7 @@ const services = [
     description: 'Precisely cut hedges and well-shaped shrubs make a significant difference to the appearance of any managed property. We trim and prune to maintain structure, encourage healthy growth, and keep communal boundaries looking sharp — not just once, but consistently across the year.',
     details: ['Hedge shaping & cutting', 'Shrub pruning', 'Tree maintenance', 'Overgrowth clearance', 'Crown lifting'],
     image: 'https://images.unsplash.com/photo-1761024300173-91f065d30a9a?w=700&q=80',
-    imageAlt: 'Professional hedge trimming pruning West London',
+    imageAlt: 'Professional hedge trimming pruning London',
   },
   {
     number: '03',

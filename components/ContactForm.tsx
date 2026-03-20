@@ -129,7 +129,7 @@ export default function ContactForm() {
           Tell us about your site <span style={{ color: '#1e3d20' }}>*</span>
         </label>
         <textarea
-          placeholder="e.g. Residential block in Ealing, approx. 0.5 acres of communal grounds, currently no maintenance contract in place..."
+          placeholder="e.g. Residential block, approx. 0.5 acres of communal grounds, currently no maintenance contract in place..."
           required
           rows={5}
           value={form.message}

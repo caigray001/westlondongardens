@@ -41,7 +41,7 @@ const clients = [
     body: 'For estate managers and private landlords overseeing significant land, we provide a dedicated, discreet service built on long-term relationships. Many of our private estate clients have been with us for over two decades.',
     tags: ['Private Estate Grounds', 'Long-Term Contracts', 'Dedicated Team'],
     image: 'https://images.unsplash.com/photo-1683849086278-acaa9c0d8eb6?w=600&q=80',
-    imageAlt: 'Private estate grounds maintenance West London',
+    imageAlt: 'Private estate grounds maintenance London',
   },
 ]
 

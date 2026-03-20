@@ -3,9 +3,8 @@
 import { useState } from 'react'
 
 const boroughs = [
-  'Ealing', 'Kensington', 'Richmond', 'Hammersmith',
-  'Chelsea', 'Fulham', 'Westminster', 'Chiswick',
-  'Acton', 'Shepherd\'s Bush', 'Brentford', 'Twickenham',
+  'North', 'South', 'East', 'West',
+  'Central', 'Outer London', 'Home Counties',
 ]
 
 export default function ContactCTA() {
@@ -70,8 +69,8 @@ export default function ContactCTA() {
                 },
                 {
                   icon: <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></>,
-                  label: 'Address', value: '45 St Marys Road, Ealing, London W5 5RG',
-                  href: 'https://maps.google.com/?q=West+London+Gardens+45+St+Marys+Road+Ealing',
+                  label: 'Address', value: 'London',
+                  href: 'https://maps.google.com/?q=London+UK',
                 },
               ].map((item) => (
                 <a key={item.label} href={item.href}
@@ -187,7 +186,7 @@ export default function ContactCTA() {
                   <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: '#4a5242', marginBottom: 6, letterSpacing: '0.04em' }}>
                     Tell us about your site <span style={{ color: '#1e3d20' }}>*</span>
                   </label>
-                  <textarea placeholder="e.g. residential block in Ealing, approx. 0.5 acres, currently no maintenance contract in place..."
+                  <textarea placeholder="e.g. residential block, approx., approx. 0.5 acres, currently no maintenance contract in place..."
                     required rows={4} value={formState.message}
                     onChange={e => setFormState(prev => ({ ...prev, message: e.target.value }))}
                     style={{
@@ -214,7 +213,7 @@ export default function ContactCTA() {
           <div className="relative overflow-hidden min-h-[300px] lg:min-h-[500px]">
             <iframe
               title="Green Crown Grounds location map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.4!2d-0.3024!3d51.5130!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760d9e3c8b2b4d%3A0x6d1c9b2f2e8f4a3b!2s45%20St%20Marys%20Rd%2C%20Ealing%2C%20London%20W5%205RG!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9932.0!2d-0.1276!3d51.5074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1620000000000!5m2!1sen!2suk"
               width="100%" height="100%"
               style={{ border: 'none', display: 'block', minHeight: 300, filter: 'grayscale(20%)' }}
               allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
@@ -224,7 +223,7 @@ export default function ContactCTA() {
               padding: '12px 16px', borderRadius: 2, boxShadow: '0 2px 12px rgba(0,0,0,0.12)',
             }}>
               <div style={{ fontSize: 12, fontWeight: 700, color: '#1a1a1a', marginBottom: 2 }}>Green Crown Grounds</div>
-              <div style={{ fontSize: 11, color: '#7a7e72' }}>45 St Marys Road, Ealing W5 5RG</div>
+              <div style={{ fontSize: 11, color: '#7a7e72' }}>London</div>
             </div>
           </div>
 
@@ -247,7 +246,7 @@ export default function ContactCTA() {
             </div>
             <div>
               <div style={{ fontSize: 13, fontWeight: 700, color: '#fff' }}>Green Crown Grounds</div>
-              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', marginTop: 1 }}>Est. 1994 · Ealing, London</div>
+              <div style={{ fontSize: 10, color: 'rgba(255,255,255,0.4)', marginTop: 1 }}>Est. 1994 · London</div>
             </div>
           </div>
           <div style={{ display: 'flex', gap: 32 }}>

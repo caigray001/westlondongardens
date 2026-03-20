@@ -100,7 +100,7 @@ export default function Home() {
             }} />
             <div className="absolute bottom-0 left-0 right-0 px-4 py-3 md:px-6 md:py-[18px]" style={{ background: '#1e3d20', color: '#fff' }}>
               <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.6, marginBottom: 5 }}>Currently Serving</div>
-              <div className="text-xs md:text-[13px]" style={{ fontWeight: 700, lineHeight: 1.5 }}>Ealing · Kensington · Richmond · Hammersmith · Chelsea & Beyond</div>
+              <div className="text-xs md:text-[13px]" style={{ fontWeight: 700, lineHeight: 1.5 }}>Grounds Maintenance Across London</div>
             </div>
           </div>
 

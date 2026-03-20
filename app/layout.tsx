@@ -32,8 +32,8 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'What areas of London do you cover?',
-      acceptedAnswer: { '@type': 'Answer', text: 'We are based in Ealing, West London and serve properties across London including Ealing, Kensington, Richmond, Hammersmith, Chelsea, Fulham, Westminster, Chiswick, Acton, and surrounding areas.' },
+      name: 'What areas do you cover?',
+      acceptedAnswer: { '@type': 'Answer', text: 'We serve properties across London and the surrounding areas.' },
     },
     {
       '@type': 'Question',
@@ -62,10 +62,10 @@ const jsonLd = {
   email: 'admin@greencrowngrounds.co.uk',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '45 St Marys Road',
-    addressLocality: 'Ealing',
-    addressRegion: 'London',
-    postalCode: 'W5 5RG',
+    streetAddress: '',
+    addressLocality: 'London',
+    addressRegion: 'Greater London',
+    postalCode: '',
     addressCountry: 'GB',
   },
   geo: {
@@ -83,12 +83,12 @@ const jsonLd = {
   ],
   description: 'Green Crown Grounds provides professional grounds maintenance for residential estates, commercial developments and block management portfolios across London. Established 1994. SafeContractor accredited.',
   foundingDate: '1994',
-  areaServed: ['Ealing', 'Kensington', 'Richmond', 'Hammersmith', 'Chelsea', 'Fulham', 'Westminster', 'London'],
+  areaServed: ['London', 'Greater London'],
   hasCredential: 'SafeContractor Approved',
   sameAs: [
     'https://www.instagram.com/greencrowngrounds',
     'https://www.facebook.com/greencrowngrounds',
-    'https://www.linkedin.com/company/west-london-gardens',
+    'https://www.linkedin.com/company/green-crown-grounds',
   ],
 }
 
